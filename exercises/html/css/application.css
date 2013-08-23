@@ -1,0 +1,95 @@
+/* stylesheet for index.html aug 7, 2013*/
+
+html {
+	background-color: #061639;
+}
+
+body {
+	width: 860px;
+	padding: 20px;
+	margin:10px auto;
+	background-color: #fff;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+#intro, h1, h2, h3 {
+	color:#5a0002;
+	
+}
+
+.question { 
+	font-style: italic;
+}
+	
+ul li {
+	list-style-type: circle;
+}
+
+ol li {
+	list-style-type: decimal-leading-zero;
+}
+	
+a {
+	text-decoration: none;
+	color: #5a0002;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+ }
+ 
+.text label {
+	display: inline-block;
+	width: 8em;
+	margin-bottom: 3px;
+ }
+ 
+ label[for="male"] {
+	margin-left: 8em;
+ }
+ 
+input[type="text"] {
+	margin-bottom: 3px;
+	border: 1px solid #333; 
+}
+
+input[type="checkbox"] {
+	display: inline-block;
+	margin: 0 5px;	
+}
+
+div.checkboxes input[type="checkbox"]:first-child {
+	margin-left: 0;
+}
+
+form input[type="text"] {
+	width: 30%;
+}
+
+#courses, #locations{
+	float: left;
+}
+
+#course_abrev {
+	clear: both;
+}
+
+td{
+	border: 1px solid #5a0002;
+	padding: 5px;
+	text-align: left;
+}
+
+thead {
+	background-color: #5a0002;
+	color: #fff;
+	text-align: center;
+}
+
+caption {
+	color: #5a0002;
+	font-size: 1.5em;
+	text-align: left;
+}

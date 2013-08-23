@@ -1,0 +1,9 @@
+﻿
+#instafeed img {
+	position: relative;
+	width: 320px;
+	margin: 8px;
+	-webkit-box-shadow: 3px 3px 3px #777;
+	 -moz-box-shadow: 3px 3px 3px #777;
+		  box-shadow: 3px 3px 3px #777;
+}

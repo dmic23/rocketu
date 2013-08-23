@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html>
+<head>
+<script type="text/javascript" scr="js/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+<script type="trext/javascript">
+$(document).ready(function(){
+	$.ajax({
+		url:'http://api.census.gov/data/2010/sf1?key=4467c1f4e16c162f292ea278c3e6f3bede271311',
+		type:'GET',
+		data: {
+			'get': 'P0010001,NAME',
+			'for': 'state:*'
+		},
+		dataType: 'json',
+		success: function(censusData){
+			console.log(censusData);
+		}
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Example JavaScript</title>
+</head>
+<body>
+	<h1>JavaScript Examples</h1>
+	
+	<script type="text/javascript">
+		//window.alert('Hi there folks');
+		//document.write('Line 1<br>');
+		//document.write('Line 2');
+		//console.log('This is a console log line');
+	
+		//Option 1 for defining variables:
+		var myName = 'Daniel';
+		var instructorName = 'Jamie';
+		
+		//Optioin 2 for defining variables:
+		var myName = 'Daniel',
+			instructorName = 'Kevin';
+			
+		document.write('My name is ' + myName + ' and I am attending a class instructed by ' + instructorName + '.<br/>');
+		var limit = 5
+		for (var count= 1; count <= limit; count++){
+			document.write('Hi ' + myName + ' the count is: ' + count + '<br/>');
+	}	
+		function helloWorld() {
+		 window.alert('Hello World ' + myName);
+		}
+		
+		function getMyName(){
+			var name = document.getElementById('first-name').value;
+			if (name.length == 0) {
+				alert('Please enter your name');
+			} else {
+			alert('My name is ' + name);
+			}
+	</script>
+		<button onclick="helloWorld();">Say Hi</button>
+	<form>
+		<label>Name</label>
+		<input type="text" id="first-name" />
+		<button onclick="getMyName()">Say my name</button>
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<title>Kandid - Customize Photo</title>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/mustache.js"></script>
+	<script src ="js/faker.js" type ="text/javascript"></script>
+	<script>
+		var randomName = Faker.Name.findName(); // Caitlyn Kerluke
+		var randomEmail = Faker.Internet.email(); // Rusty@arne.info
+		var randomCard = Faker.Helpers.createCard(); // random contact card containing many properties
+		console.log(randomName+' '+randomEmail);
+		console.log(randomCard);
+		
+		var data = {
+			firstname: Faker.Name.firstName(),
+			lastname: Faker.Name.lastName(),
+			description: Faker.Lorem.paragraph()
+		};
+		$(document).ready(function(){
+			$('body').append( Mustache.render( $('#sample-template').html(), data) );
+		});	
+			if (localStorage.getItem('complaintList')){
+				var list = JSON.parse(localStorage.getItem('complaintList'));
+			} else {
+				
+				var list = [];
+				for (i=0; i<10; i++){
+					var complaint = {
+						person: Faker.Name.findName(),
+						issue: Faker.Lorem.paragraph(),
+						type: Faker.random.array_element(['Pot Holes', 'Grafitti', 'Broken Meter'])
+				};	
+				list.push(complaint);
+				}
+			}	
+			console.log(list);
+		$(document).ready(function(){
+			
+			$('body').append( Mustache.render( $('#complaint-template').html(), list) );
+			
+		});	
+			localStorage.setItem('complaintList',JSON.stringify(list));
+			console.log(localStorage.getItem('complaintList'));
+
+  </script>
+</head>
+<body>
+<script type="text/template" id="sample-template">
+		<h1>Hello, {{firstname}} {{lastname}}</h1>
+		<p>{{description}}</p>
+</script>
+<script type="text/template" id="complaint-template">
+	<ul id="complaints">
+	{{#.}}
+			<li>
+				<strong>{{person}} reported a {{type}} complaint</strong>
+				<p>{{issue}}</p>
+			</li>	
+	{{/.}}	
+	</ul>
+</script>
+	<div id="faker-data" class="">
+		
+	</div></br>
+</body>
+</html>

@@ -1,0 +1,49 @@
+Aug 8th
+
+--- JavaScript ---
+Link: 
+	- Internal = <script type='text/javascript">JAVASCRIPT IN HERE</script>
+	- Extrenal = <script src="linktofile.js">
+		(type=text/javascript NOT required in html5
+Statements
+	- Seperate line need to end in a ;
+	- Comments are //
+Variables
+	- var VARIABLENAME
+	- var varname = "the name"
+	- can daisy chain variables
+	- Also OK to use:
+		var myName = 'Daniel',
+			 instructorNmae = 'Kevin';
+Operators
+	- Add to the integer: declare 
+
+Loop
+	- For loop: Structure is for('start; testcase; end)
+		var limit = 5
+			for (var count= 1; count <= limit; count++){
+				document.write('Hi ' + myName + ' the count is: ' + count + '<br/>');
+		}
+	- While loop
+		var limit = 5, 
+			 i = 1; 
+			while(i < limit) {
+				document.write( 'The while loop value is  ' + i + '<br/>'); 
+				i++;
+			}
+	- Can use var+=num to increment
+Functions
+	- Block of code that can be called and executed
+		function helloWorld() {
+		 window.alert('Hello World');
+		}
+		
+		helloWorld()
+			or
+		<button onclick="helloWorld();">Say Hi</button>
+DOM
+	- 
+	- document.getElementById
+		var fieldVal = document.getElementById('field1').value;
+
+		

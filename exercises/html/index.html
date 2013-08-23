@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>"RocketU Web Developer Training"</title>
+<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="css/application.css"/>
+</head>
+
+<body>
+	<header>
+		<img src="rocketspacelogo.png" alt="Rocket Space Logo" title="RocketU - Web Developer Training" width="200" border="0" />
+	</header>	
+	<div>
+		<h1>Web Developer Training</h1>
+		<p id="intro">Welcome to RocketU. Details of our web developer courses are shown below. 
+		If you would like to make a reservation, or have an enquiry, then just complete the form on this 
+		page and send it to us and we'll get back to you in a blink.</p>
+	</div>
+	<div id="courses">	
+		<h2>Courses</h2>
+		<ol>
+			<li><a href="http://rocket-space.com/rocketu/#onlinecourse" title="View details of our Coding & Web Fundamentals course...">Web and Coding Fundamentals</a></li>
+			<li><a href="http://rocket-space.com/rocketu/#bootcamp" title="View details of our Web Developer Bootcamp..." accesskey="b">Web Developer Bootcamp</a></li>
+		</ol>
+	</div>
+	<div id="locations">	
+		<h2>Locations</h2>
+		<ul>
+			<li>Online</li>
+			<li>San Francisco</li>
+			<li>New York</li>
+		</ul>
+	</div>
+	<div id="course_abrev">
+		<h2>Course Codes and Abbreviations</h2>
+		<dl>
+			<dt>CWF</dt>
+			<dd>Coding &amp; Web Fundamentals</dd>
+			<dt>WDB</dt>
+			<dd>Web Developer Bootcamp</dd>
+			<dt>OL</dt>
+			<dd>Online Courses</dd>
+			<dt>CR</dt>
+			<dd>Classroom based course</dd>
+		</dl>
+	</div>
+	<div>
+		<h2>Upcoming Courses</h2>
+		<table>
+			<caption>Course Schedule</caption>
+			<thead>
+				<tr>
+					<th>Start Date</th>
+					<th>Course Code</th>
+					<th>Location</th>
+					<th>Format</th>
+					<th>Duration</th>
+					<th>Availability</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>July 8th</td>
+					<td>WCF</td>
+					<td>Online</td>
+					<td>OL</td>
+					<td>2 Weeks</td>
+					<td>No</td>
+				</tr>
+				<tr>
+					<td>Aug 5th</td>
+					<td>WDB</td>
+					<td>San Francisco</td>
+					<td>CR</td>
+					<td>10 Weeks</td>
+					<td>No</td>
+				</tr>
+				<tr>
+					<td>Oct 21</td>
+					<td>WCF</td>
+					<td>Online</td>
+					<td>OL</td>
+					<td>2 Weeks</td>
+					<td>Yes</td>
+				</tr>
+			</tbody>
+			</table>
+	</div>
+	<div>
+		<h2>Entry Form</h2>
+		<p>If you are interested in joining one of our courses then please complete and submit the 
+		entry form below.</p>
+		<form>
+			<h3>Your details</h3>
+			<div class="text">
+				<label for="firstname">First Name</label>
+				<input type="text" name="firstname" id="firstname"/><br/>
+				<label for="lastname">Last Name</label>
+				<input type="text" name="lastname" id="lastname'"/><br/>
+				<label for="email">Email</label>
+				<input type="text" name="email" id="email"/><br/>
+				<label for="phone">Phone</label>
+				<input type="text" name="phone" id="phone"/><br/>
+			</div>
+			<div>
+				<label for="male">Male</label>
+				<input type="radio" name="sex" id="male" value="male"/>
+				<label for="female">Female</label>
+				<input type="radio" name="sex" id="female" value="female"/>
+			</div>
+			<h3>Web Experience</h3>
+				<p class="question">Which of the following technologies do you have experience of?</p>
+			<div class="checkboxes">
+				<input type="checkbox" name="tech_html" id="tech_html" value="html"/>
+				<label for="tech_html">HTML</label>
+				<input type="checkbox" name="tech_css" id="tech_css" value="css"/>
+				<label for="tech_css">CSS</label>
+				<input type="checkbox" name="tech_js" id="tech_js" value="js"/>			
+				<label for="tech_js">JavaScript/jQuery</label>
+			</div>
+			<div class="checkboxes">
+			<h3>Courses</h3>
+				<p class="question">Which courses are you interested in?</p>
+				<input type="checkbox" name="course_wcf" id="course_wcf" value="wcf"/>		
+				<label for="course_wcf">Web &amp; Coding Fundamentals</label>
+				<input type="checkbox" name="course_wdb" id="course_wdb" value="wdb"/>			
+				<label for="course_wdb">Web Developer Bootcamp</label>
+			</div>
+		<div class="checkboxes">
+			<h3>Coding Experience</h3>
+				<input type="checkbox" name="lang_vb" id="lang_vb" value="vb"/>
+				<label for="lang_vb">Visual Basic</label>
+				<input type="checkbox" name="lang_java" id="lang_java" value="java"/>
+				<label for="lang_java">Java</label>
+				<input type="checkbox" name="lang_ruby" id="lang_ruby" value="ruby"/>
+				<label for="lang_ruby">Ruby</label>
+				<input type="checkbox" name="lang_python" id="lang_python" value="python"/>
+				<label for="lang_python">Python</label>
+				<input type="checkbox" name="lang_php" id="lang_php" value="php"/>
+				<label for="lang_php">PHP</label>
+				<input type="checkbox" name="lang_js" id="lang_js" value="js"/>
+				<label for="lang_js">JavaScript</label>
+				<input type="checkbox" name="lang_other" id="lang_other" value="other"/>
+				<label for="lang_other">Other</label>
+		</div>
+		<div>
+			<p>If you ticked 'Other' please provide details below.</p>
+			<label for="other_details">Details</label>
+			<input type="textarea" name="other_details" id="other_details" value=""/>
+		</div>	
+		<div>
+			<h3>Locations</h3>
+				<p class="question">What is your preferred location for classroom based courses?</p>
+			<select>
+				<option value="any">Any</option>
+				<option value="sf">San Francisco</option>
+				<option value="ny">New York</option>
+			</select><br>
+		</div>
+		<div>
+			<p>Once you have completed the form please use the button below to send us your enquiry and we'll get back tp you just as soon as we can.</p>
+					Action: <input type="submit" value="Submit enquiry"/>
+		</div>
+	</form>
+	</div>
+	<h2>Contact Us!</h2>
+	<address>
+		RocketSpace<br/>
+		225 Bush St<br/>
+		San Francisco, CA 94102<br/>
+		(415)555-5555<br/>
+	</address>
+</body>
+</html>

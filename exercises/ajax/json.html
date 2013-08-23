@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON Examples</title>
+	<script type="text/javascript">
+		var students = ['Daniel', 'James', 'Andrew', 'Joe', 'Brian', 'Chris', 'Max', 'Paul', 'Mike'];
+		console.log(students[7]);
+		
+		var studentsAttendance = [
+			{ name: 'Daniel', isHere: true },
+			{ name: 'Paul', isHere: false }
+		];
+		console.log(studentsAttendance.isHere); //undefined
+		console.log(studentsAttendance[0].isHere); // true
+		console.log(studentsAttendance[1].name); // Paul
+		console.log(studentsAttendance[1]['name']); //Paul
+
+		// Print out names for students not here
+			for (i=0; i<studentsAttendance.length; i++) {
+					if (studentsAttendance[i].isHere == false) {
+						var name = studentsAttendance[i].name;
+				console.log(name);
+				}	
+			}
+		var studentSkills = [
+			{ name: 'Daniel', skills: ['html', 'css', 'js']},
+			{ name: 'Joe', skills: ['jquery']}
+		];	
+			console.log(studentSkills[0].skills[2]);
+	</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,84 @@
+----- Aug 5th -----
+email: wtf@rocket-space.com
+
+filter based on popularity
+facial recognition
+topic based... (?)
+
+login
+api
+settings/ preferences
+sharing/social
+
+----- Aug 6th -----
+CSS
+- link style sheet
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+		--- not recommended--- @import url("global-styles.css");
+Rules
+- Two main parts: selector and declaration(s)
+- selector{ declaration-words:declaration; }
+- comments= /* text */
+- ID= single unique element fom html
+	#id { declaration:dec; }
+- Class= group of elements
+	.class{ declaration:dec;}
+- Color= color: name, or #hex or rgb(1,2,3) or rgba(1,2,3,4)
+- Separate multiple selectors by comma and space.
+- Nesting= no space in selector. applies to subsequent selectors and relationship to the previous selector. 
+- Text= color, alignment, decoration
+	font-family: Arial, Times, Serif
+	font-size: px, em, %
+	font-style: normal, italic, etc. 
+	font-weight: bold or num
+	text-declaration: underline, none, etc.
+- Styling Lists= list-style-type: declaration
+	can also clear style
+- Styling links= states use a:state{dec:dec;}
+	link: a:link{declaration:declaration:}
+	visited: a:visited{declaration:declaration:}
+	hover: a:hover{declaration:declaration:}
+	selected: a:selected{declaration:declaration:}
+	active: a:active{declaration:declaration:}
+- Styling Images= 
+	opacity: img{opacity: 0.3;} use decimal upto 1. ex: 0.25
+		not recognized in IE8 and earlier need to use a filter
+- Selectors
+	attributes: input[type="text"]{ 
+					declaration: declaration
+					}
+	**** first-child/last-child: p > a:first-child{color:#f00;}
+	adjacent selector: use selector (+) selector ex: p > a:first-child + h2 { declaration:dec; }
+- Inline and Block Elements
+	inline elements have no effect on layout
+	block elemets are rectangular block within the complete page
+	inline elements: <em>, <strong>, <i>, <b>, <sub>, <sup>, <span>
+	block elements:
+- Box Model
+	Elements act as containers of content
+	Set padding, border, margin
+	padding: between content and border
+	border: between padding and margin
+	margin between border and next element
+	-- additions will accumulate on both sides for each element, padding, border and margin
+- Dimension Properties
+	Height, width, max height, max width, min height, min width
+	px= exact pixels
+	% = percent of actual page
+	border-width, border-style, border-color
+	short form: {border: 1px solid red;} space with no comma
+- Floats
+	ex: float: left 	elements float horizontally and subsequent elements will float around it. 
+	clear: both = removes floats
+- Media Type
+	@media = how displayed on different types of media.
+	media type ex: screen, print, handheld, projection, tv, all, etc
+	
+	
+	
+	
+
+	
+
+
+

@@ -1,0 +1,9 @@
+[
+	{ "title": "Superman: Unbound", "isNew": true },
+	{ "title": "Hansel &amp; Gretel", "isNew": true },
+	{ "title": "A Good Day to Die Hard", "isNew": false },
+	{ "title": "Skyfall", "isNew": true },
+	{ "title": "Night of the Templar", "isNew": false },
+	{ "title": "Your Mom", "isNew": false }	
+]
+

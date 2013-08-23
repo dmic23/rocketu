@@ -1,0 +1,50 @@
+--- JSON ---
+Name/vaue pairs(objects)
+	(key to value)
+List of values(arrays)
+Object structure
+	{
+		firstname: "Mike",
+		lastname: "Jones",
+		age: 25,
+		email: "mike@welovewombats.com",
+		administrator: false,
+		adoptedwombat: {name: "Joe", location: "Tasmania"}
+	}
+
+RUN JSON directly in Javascript
+
+	var person = {
+		firstname: "Mike",
+		lastname: "Jones",
+		age: 25,
+		email: "mike@welovewombats.com",
+		administrator: false,
+		adoptedwombat: {name: "Joe", location: "Tasmania"}
+	}
+	console.log(person.adoptedwombat);
+Can combine object types
+
+--- XML ---
+<?xml version="1.0"?>
+	<person title"Mr">
+		<firstname>Daniel</firstname>
+	</person>
+Different parse methods per browser
+	Need .parseXML method
+jquery for parsong XML
+
+
+	var xmlDoc = $.parseXML(personxml);
+	var xml = $(xmlDoc);
+	
+--- AJAX ---
+$.ajax ({ 
+	url: 'data/person.json',
+	type: 'GET'
+	dataType: 'json',
+	success: function(person)
+	{
+	console.log(person.firstname);
+	}
+});

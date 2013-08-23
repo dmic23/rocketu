@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<title>Mustache Template</title>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/mustache.js"></script>
+	<script type="text/javascript" src="js/application.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/application.css"/>
+</head>
+<body>
+<script id="all-movies-template" type="text/template">
+	<li>
+		{{#movies}}
+			<h2>{{title}}</h2>
+			<img src="{{posters.thumbnail}}"/>
+			<span>{{ratings.critics_rating}}</span>
+			{{#abridged_cast}}
+				<li>{{name}}</li>
+					<ul>
+						{{#characters}}
+							<li>{{.}}</li>
+						{{/characters}}
+					</ul>
+			{{/abridged_cast}}
+		{{/movies}}
+	</li>
+</script>
+	<ul id="moviesList">
+	
+	</ul>
+</body>
+</html>

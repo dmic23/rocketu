@@ -3,15 +3,27 @@
 <head>
 	<title>Kandid - Get Kandid</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
-	<script type="text/javascript" src="js/seed.js"></script>	
 	<script type="text/javascript" src="js/application.js"></script>
+	<script type="text/javascript" src="js/seed.js"></script>
+	<script type="text/javascript" src="js/fb-login.js"></script>
+	<script type="text/javascript" src="js/image-capture.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/application.css"/>
 </head>
 <body>
-	<canvas id="screenshot-canvas" style="display:none;" width="640" height="480"></canvas>
-	<div id="buttons" class="">
+	<div id="fb-root"></div>
+	<div id="photo-container" class="container">
+		<header>
+			<div id="capture-photo" class="">
+				<input type="file" id="kandid-pic" name="image" accept="image/*" capture>
+			</div>
+			<button type="button" id="photo-edit" class="btn btn-default" onclick="location.href='edit-photo.html';">edit</button>
+		</header>
+		<section>
+			<canvas id="canvas"  width="600" height="600"></canvas>
+		</section>
 	</div>
 </body>
 </html>

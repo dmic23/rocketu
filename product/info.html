@@ -6,17 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="js/application.js"></script>
+	<script type="text/javascript" src="js/seed.js"></script>
+	<script type="text/javascript" src="js/fb-login.js"></script>	
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/application.css"/>
 </head>
 <body>
-	<div id="" class="container">
-		<header id="header-info">
+<div id="fb-root"></div>
+	<div id="info-conatiner" class="container">
+		<header id="info-header" class="page-header">
 			<h1>Kandid User Info</h1>
+			<button type="button" id="info-back" class="btn btn-default" onclick="location.href='home.html';">back</button>
 		</header>
-			<div>
-				<img scr="https://graph.facebook.com/me/picture"/>
-			</div>
+		<div id="info-content" class="">
+			<div id="info-user" class="fb-user-pic"></div>
+			<div id="info-user-name" class=""></div>
+			
+		</div>	
 	</div>
 </body>
 </html>

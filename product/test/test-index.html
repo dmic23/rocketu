@@ -1,0 +1,18 @@
+﻿function upload(file) {
+	var clearLocalStorageFlag = false;
+	var file;
+		
+	if (localStorage.getItem('file') && !clearLocalStorageFlag){
+
+		file = JSON.parse(localStorage.getItem('file'));
+	
+	} else {
+		
+		file = [];
+			file.push(input);
+		console.log(file);
+	
+	}	
+		
+	localStorage.setItem('file',JSON.stringify(file));		
+};

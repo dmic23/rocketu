@@ -6,33 +6,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="js/application.js"></script>
-	<script type="text/javascript" src="js/instafeed.min.js"></script>
+	<script type="text/javascript" src="js/seed.js"></script>
+	<script type="text/javascript" src="js/fb-login.js"></script>	
+	<script type="text/javascript" src="js/instafeed.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/application.css"/>
 </head>
 <body>
 <div id="fb-root"></div>
-<script type="text/javascript" src="js/fb-login.js"></script>
-	<div id="home-page" class="container">
-		<header id="header-home">
+	<div id="home-container" class="container">
+		<header id="home-header" class="page-header">
+			<button type="button" id="home-info" class="btn btn-default" onclick="location.href='info.html';">i</button>
+			<div id="home-user" class="fb-user-pic"></div>		
 			<h1>Kandid</h1>
-			<button type="button" id="home-settings" class="btn btn-default" onclick="location.href='settings.html';"><span class="glyphicon glyphicon-cog"></span>i</button>
 		</header>
 		<div id="home-content" class="">
-			<div id="home-filter-tab" class="btn-group">
-				<button type="button" id="home-recent-photo" class="btn btn-default">Recent</button>
-				<button type="button" id="home-friends-photo" class="btn btn-default">Friends</button>
-				<button type="button" id="home-near-photo" class="btn btn-default">Near Me</button>
-				<button type="button" id="home-search-photo" class="btn btn-default">Search</button>
-			</div> 
+			<nav class="navbar navbar-default" role="navigation">
+				<div id="home-filter-tab" class="navbar-btn btn-group">
+					<button type="button" id="home-recent-photo" class="btn btn-default">Recent</button>
+					<button type="button" id="home-friends-photo" class="btn btn-default">Friends</button>
+					<button type="button" id="home-near-photo" class="btn btn-default">Near Me</button>
+					<button type="button" id="home-search-photo" class="btn btn-default">Search</button>
+				</div> 
+			</nav>
 			<div  class="">
 				<ul id="instafeed" class="list-unstyled, display: inline-block, polaroid">
 				</ul>
 			</div>
 		</div>
-		<nav id="home-nav" class="nav">
+		<nav id="home-nav" class="nav" role="navigation">
 			<a href="search/filter">Search/Filter</a>
-			<a href="camera">Take Photo</a>
+			<a href="photo.html">Take Photo</a>
 			<a href="map.html">Kandid Map</a>
 		</nav>
 	</div>

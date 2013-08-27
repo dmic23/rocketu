@@ -3,15 +3,51 @@
 <head>
 	<title>Kandid - Customize Photo</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="js/application.js"></script>
-	  <script src ="faker.js" type ="text/javascript"></script>
+	<script type="text/javascript" src="js/seed.js"></script>
+	<script type="text/javascript" src="js/fb-login.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/application.css"/>
 </head>
 <body>
-	<div id="" class="">
-		
+<div id="fb-root"></div>
+	<div id="customize-container" class="container">
+		<header>
+			<div id="customize-user" class="fb-user-pic"></div>
+			<button type="button" id="customize-back" class="btn btn-default" onclick="location.href='edit-photo.html';">back</button>
+			<h1>Kandid</h1>
+		</header>
+		<div id="customize-content" class="">
+			<div id="pic-preview" class=""></div>
+				<form id="form-horizontal">
+					<div id="customize-comment" class="form-group">
+						<label for="kandid-comment" class="col-lg-3 control-label">comment</label>
+						<textarea id="kandid-comment" class="form-control" rows="6" placeholder="comment on your Kandid"></textarea>
+					</div>
+					<div id="custommize-tag" class="form-group">
+						<label for="tag-user">add your friends</label>
+						<input type="search" id="tag-user" class="form-control" placeholder="who got kandid?"></input>
+					</div>
+					<div id="customize-location" class="form-group">
+						<label for="user-location">add a location</label>
+						<input type="search" id="user-location" class="form-control" placeholder="where'd you get kandid?"></input>					
+					</div>
+						<h4>share</h4>
+						<div id="social-share" class="">
+							<div id="customize-fb-share">
+								<a href="http://www.facebook.com"><img id="fb-share" class="" src="img/facebook-logo.png"/></a>
+							<div id="customize-tweet">
+								<a href="http://www.twitter.com"><img id="twitter-share" class="" src="img/twitter-logo.png"/></a>
+							</div>
+							<div id="customize-share" class="form-group">
+								<button type="submit" class="form-control, btn btn-primary btn-lg btn-block" onclick="location.href='home.html';">post your kandid ! </button>
+							</div>
+						</div>	
+					</div>	
+				</form>	
+		</div>
 	</div>
 </body>
 </html>

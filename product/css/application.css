@@ -1,9 +1,67 @@
-﻿
-#instafeed img {
-	position: relative;
+﻿body {
 	width: 320px;
+	background-color: #F5ECAD;
+	color: #3F5666;
+}
+
+header {
+	background-color: #3F5666;
+	width: 320px;
+	height: 50px;
+	color: #fff;
+}
+header h1 { margin: 0; font-size: 16px; line-height: 50px; text-align: center; font-weight: bold; }
+header button { float: left; margin: 5px; }
+header .fb-user-pic { float: right; margin: 5px; }
+#pic-preview { margin: 10px 5px 0 0;}
+#login-form input { float: left; margin: 5px; }
+
+
+#instafeed img {
+	float:left;
+	position: relative;
+	width: 290px;
 	margin: 8px;
 	-webkit-box-shadow: 3px 3px 3px #777;
 	 -moz-box-shadow: 3px 3px 3px #777;
 		  box-shadow: 3px 3px 3px #777;
+}
+
+canvas {
+	width: 300px; height: 300px;
+}
+
+#home-info {
+	float: right;
+}
+
+.fb-profile-pic {
+	float: right;
+	height: 1.8em;
+	width: 1.8em;
+	-webkit-box-shadow: 2px 2px 2px #777;
+	 -moz-box-shadow: 2px 2px 2px #777;
+		  box-shadow: 2px 2px 2px #777;
+}
+
+.fb-user-name {
+	float:left;
+}
+
+#pic-preview {
+	float:left;
+	height: 130px;
+	width: 130px;
+}
+
+#customize-comment {
+	float:left;
+	height: 150px;
+	width: 150px;
+}
+
+#info-user .fb-profile-pic {
+	float:left;
+	height: 8em;
+	width: 8em;
 }

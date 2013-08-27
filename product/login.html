@@ -3,47 +3,51 @@
 <head>
 	<title>Kandid - Login</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/seed.js"></script>
+	<script type="text/javascript" src="js/fb-login.js"></script>
 	<script type="text/javascript" src="js/application.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/application.css"/>
 </head>
 <body>
-	<script type="text/javascript" src="js/fb-login.js"></script>
-	<div id="login-page" class="wrapper">
+	<div id="fb-root"></div>
+	<div id="login-container" class="container">
 		<header>
-			<img class="logo-med" src=""/>
 			<h1>Kandid</h1>
 		</header>
-		<div id="fb-root">
+		<div id="login-content">
 			<h2>Login with Facebook</h2>
-				<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
-		</div>
-		<div class="panel-group" id="accordion">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Login with email</a>
-					</h4>
-				</div>
-				<div id="collapseOne" class="panel-collapse collapse">
-					<div class="panel-body">
-						<form>
-								<label>Name</label>
-									<input type="text" placeholder="enter your name" name="full-name"></input><br>
-								<label>User Name</label>
-									<input type="text" placeholder="enter a user name" name="user-name"></input><br/>
-								<label>Email</label>
-									<input type="email" placeholder="enter your email" name="user-email"></input><br/>
-								<label>Password</label>
-									<input type="password" placeholder="choose a password" name="user-password"></input><br/>
-									<input type="password" placeholder="confirm your password" name="user-password-confirm"></input><br/>
-									<input type="submit" placeholder="Login">
-						</form>
+			<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+			<br/>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Login with email</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse">
+						<div class="panel-body">
+							<form id="login-form" class="">
+								<label for="login-name" class="col-lg-2 control-label">Name</label></br>
+									<input type="text" id="login-name" class="" placeholder="enter your name" name="full-name"></input></br>
+								<label for="login-user-name" class="col-lg-2 control-label">User Name</label></br>
+									<input type="text" id="login-user-name" class="" placeholder="enter a user name" name="user-name"></input></br>
+								<label for="login-email" class="col-lg-2 control-label">Email</label></br>
+									<input type="email" id="login-email" class="" placeholder="enter your email" name="user-email"></input></br>
+								<label for="login-password" class="col-lg-2 control-label">Password</label></br>
+									<input type="password" id="login-password" class="" placeholder="choose a password" name="user-password"></input><br/>
+									<input type="password" id="login-confim-password" class="form-group" placeholder="confirm your password" name="user-password-confirm"></input></br>
+									<input type="submit" class="" placeholder="Login">
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 </body>
 </html>
